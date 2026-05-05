@@ -1,2 +1,2 @@
-# Programming-of-Computer-Graphics
+# Computer graphics programming
 This repository is a storage for my university projects.
