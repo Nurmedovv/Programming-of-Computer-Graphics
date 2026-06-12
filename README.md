@@ -13,18 +13,21 @@
   <img src="https://img.shields.io/badge/WebGL-990000?style=for-the-badge&logo=webgl&logoColor=white" alt="WebGL" height="30"/>
   <img src="https://img.shields.io/badge/ExifJS-FF6600?style=for-the-badge&logo=javascript&logoColor=white" alt="ExifJS" height="30"/>
   <img src="https://img.shields.io/badge/Piexif-2C8EBB?style=for-the-badge&logo=javascript&logoColor=white" alt="Piexif" height="30"/>
+  <img src="https://img.shields.io/badge/Mathematics-2E8B57?style=for-the-badge&logo=latex&logoColor=white" alt="Mathematics" height="30"/>
+  <img src="https://img.shields.io/badge/Linear_Algebra-1E90FF?style=for-the-badge&logo=matrix&logoColor=white" alt="Linear Algebra" height="30"/>
+  <img src="https://img.shields.io/badge/Geometry-FF8C00?style=for-the-badge&logo=geometric&logoColor=white" alt="Geometry" height="30"/>
 </p>
 
 ## 📚 Список работ
 
 | № | Название | Описание |
 |---|----------|----------|
-| **1** | Image Metadata Analyzer | Анализ метаданных изображений (JPG, PNG, GIF, BMP, TIFF, WEBP). Извлечение EXIF-данных, матрицы квантования JPEG, визуализация гистограмм. |
-| **2** | Редактор изображений | Интерактивная обработка изображений: яркость/контраст, гистограмма, пороговая обработка, морфологические операции (дилатация/эрозия), детекторы границ (Собель, Кэнни, Харрис, FAST). |
-| **3** | Базовые растровые алгоритмы | Визуализация алгоритмов растеризации: пошаговый, ЦДА, Брезенхема (отрезок и окружность), кривые Безье (Кастлжо), сглаживание линий (алгоритм Ву). **Пошаговый режим** для обучения. |
-| **4** | Алгоритмы отсечения | Отсечение отрезков и многоугольников прямоугольным окном: алгоритм средней точки и Сазерленда-Ходжмена. Загрузка данных из файла, масштабирование/панорамирование. |
-| **5** | Конвертер цветовых моделей | Двусторонняя конвертация между моделями RGB ↔ HSV ↔ XYZ ↔ LAB. Превью цвета, история операций, синхронизация ползунков и числовых полей. |
-| **6** | 3D Визуализация буквы "N" | Трехмерная модель буквы "N" с управлением: масштаб, поворот по трём осям (X, Y, Z), перенос. Матричные преобразования, проекции на плоскости XY, XZ, YZ. Управление мышью и автоповорот. |
+| **1** | Image Metadata Analyzer `📐` | Анализ метаданных изображений (JPG, PNG, GIF, BMP, TIFF, WEBP). Извлечение EXIF-данных, матрицы квантования JPEG, визуализация гистограмм. |
+| **2** | Редактор изображений `📊` | Интерактивная обработка изображений: яркость/контраст, гистограмма, пороговая обработка, морфологические операции (дилатация/эрозия), детекторы границ (Собель, Кэнни, Харрис, FAST). |
+| **3** | Базовые растровые алгоритмы `📈` | Визуализация алгоритмов растеризации: пошаговый, ЦДА, Брезенхема (отрезок и окружность), кривые Безье (Кастлжо), сглаживание линий (алгоритм Ву). **Пошаговый режим** для обучения. |
+| **4** | Алгоритмы отсечения `✂️` | Отсечение отрезков и многоугольников прямоугольным окном: алгоритм средней точки и Сазерленда-Ходжмена. Загрузка данных из файла, масштабирование/панорамирование. |
+| **5** | Конвертер цветовых моделей `🎨` | Двусторонняя конвертация между моделями RGB ↔ HSV ↔ XYZ ↔ LAB. Превью цвета, история операций, синхронизация ползунков и числовых полей. |
+| **6** | 3D Визуализация буквы "N" `🧊` | Трехмерная модель буквы "N" с управлением: масштаб, поворот по трём осям (X, Y, Z), перенос. Матричные преобразования, проекции на плоскости XY, XZ, YZ. Управление мышью и автоповорот. |
 
 ## 🚀 Как запустить
 
@@ -81,61 +84,79 @@ computer-graphics-labs/
 
 ## 🎯 Особенности реализации
 
-### Лабораторная работа №1
+### Лабораторная работа №1 `📐`
 - Поддержка до 100,000 файлов одновременно
 - Drag-and-drop загрузка
 - EXIF-анализ с помощью библиотеки piexifjs
 - Визуализация матрицы квантования JPEG
 - Экспорт результатов в CSV
+- **📐 Математика:** Матрица квантования 8×8, статистика гистограмм (среднее, отклонение)
 
-### Лабораторная работа №2
+### Лабораторная работа №2 `📊`
 - Мгновенное применение фильтров (real-time)
 - Детекторы границ: Собель, Прюитт, Лапласиан, Кэнни, Харрис, FAST
 - Морфологические операции: дилатация, эрозия, открытие, закрытие
 - Адаптивная и глобальная пороговая обработка (метод Оцу)
 - Визуализация гистограмм RGB с математической статистикой
+- **📊 Математика:** Ядра свертки (Собель, Лапласиан), морфология (дилатация/эрозия), метод Оцу (максимизация дисперсии)
 
-### Лабораторная работа №3
+### Лабораторная работа №3 `📈`
 - Пошаговый режим с отображением вычислений
 - Система координат с центром в середине canvas
 - Клик по сетке для ввода координат
 - Регулировка размера сетки (10-50px)
+- **📈 Математика:** 
+  - Пошаговый: `x = x₁ + i·dx/steps`
+  - ЦДА: инкрементальные вычисления
+  - Брезенхем: `err = dx - dy`
+  - Окружность: `d = 3 - 2·R`
+  - Безье: `B(t) = (1-t)²P₀ + 2(1-t)tP₁ + t²P₂`
 
-### Лабораторная работа №4
+### Лабораторная работа №4 `✂️`
 - Загрузка данных из текстового файла
 - Встроенный пример для тестирования
 - Масштабирование и панорамирование
 - Две проекции: ортографическая для 2D, перспективная для 3D
+- **✂️ Математика:** Коды точек (4-битные коды), битовые операции, вычисление точек пересечения
 
-### Лабораторная работа №5
+### Лабораторная работа №5 `🎨`
 - Точность до 5 знаков после запятой (HSV)
 - Автоматическая синхронизация всех моделей
 - История последних 10 цветов
 - Прямое преобразование через матрицы XYZ (не через промежуточные модели)
+- **🎨 Математика:** 
+  - HSV: `V = max(R,G,B)`, `S = (max-min)/max`
+  - XYZ: матричное преобразование 3×3
+  - LAB: `L = 116·f(Y/Yₙ) - 16`, нелинейное преобразование
 
-### Лабораторная работа №6
+### Лабораторная работа №6 `🧊`
 - Вращение модели мышью (drag-and-drop)
 - Отображение полной матрицы преобразования 4×4
 - Три проекции (XY, XZ, YZ) в реальном времени
 - Автоповорот с регулируемой скоростью
+- **🧊 Математика:** 
+  - Матрицы поворота Rx, Ry, Rz (тригонометрия)
+  - Матрица масштабирования S
+  - Матрица переноса T
+  - Перспективная проекция: `factor = d/(d + z)`
 
 ## 📊 Демонстрация алгоритмов
 
-| Алгоритм | Лабораторная работа |
-|----------|---------------------|
-| EXIF-анализ | №1 |
-| Линейное контрастирование | №2 |
-| Выравнивание гистограммы | №2 |
-| Алгоритм Оцу | №2 |
-| Пошаговая растеризация | №3 |
-| ЦДА | №3 |
-| Брезенхема (линия/окружность) | №3 |
-| Кастлжо (кривые Безье) | №3 |
-| Алгоритм Ву (сглаживание) | №3 |
-| Отсечение отрезков | №4 |
-| Отсечение многоугольников | №4 |
-| RGB → HSV → XYZ → LAB | №5 |
-| Матричные 3D-преобразования | №6 |
+| Алгоритм | Лабораторная работа | Математическая основа |
+|----------|---------------------|----------------------|
+| EXIF-анализ | №1 `📐` | Матрицы, статистика |
+| Линейное контрастирование | №2 `📊` | `factor = (259·(contrast+255))/(255·(259-contrast))` |
+| Выравнивание гистограммы | №2 `📊` | `cdf[i] / totalPixels · 255` |
+| Алгоритм Оцу | №2 `📊` | `σ² = wB·wF·(μB-μF)²` |
+| Пошаговая растеризация | №3 `📈` | `x = x₁ + i·dx/steps` |
+| ЦДА | №3 `📈` | Инкрементальный метод |
+| Брезенхема (линия/окружность) | №3 `📈` | `err = dx - dy`, `d = 3 - 2R` |
+| Кастлжо (кривые Безье) | №3 `📈` | Линейная интерполяция, рекурсия |
+| Алгоритм Ву (сглаживание) | №3 `📈` | α = расстояние до идеальной линии |
+| Отсечение отрезков | №4 `✂️` | 4-битные коды, битовые `&`, `|` |
+| Отсечение многоугольников | №4 `✂️` | Отсечение ребром, точка пересечения |
+| RGB → HSV → XYZ → LAB | №5 `🎨` | Матрица 3×3, нелинейное f(t) |
+| Матричные 3D-преобразования | №6 `🧊` | `M_total = T·Rz·Ry·Rx·S`, `v' = M·v` |
 
 ## 👤 Автор
 
@@ -161,18 +182,20 @@ Repository with completed laboratory works for the computer graphics course.
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" height="30"/>
   <img src="https://img.shields.io/badge/Canvas_API-2C3E50?style=for-the-badge&logo=html5&logoColor=white" alt="Canvas API" height="30"/>
   <img src="https://img.shields.io/badge/WebGL-990000?style=for-the-badge&logo=webgl&logoColor=white" alt="WebGL" height="30"/>
+  <img src="https://img.shields.io/badge/Mathematics-2E8B57?style=for-the-badge&logo=latex&logoColor=white" alt="Mathematics" height="30"/>
+  <img src="https://img.shields.io/badge/Linear_Algebra-1E90FF?style=for-the-badge&logo=matrix&logoColor=white" alt="Linear Algebra" height="30"/>
 </p>
 
 ## 📚 List of Works
 
 | # | Title | Description |
 |---|-------|-------------|
-| **1** | Image Metadata Analyzer | Image metadata analysis (JPG, PNG, GIF, BMP, TIFF, WEBP). EXIF data extraction, JPEG quantization matrix, histogram visualization. |
-| **2** | Image Editor | Interactive image processing: brightness/contrast, histogram, thresholding, morphological operations, edge detectors (Sobel, Canny, Harris, FAST). |
-| **3** | Raster Algorithms | Visualization of rasterization algorithms: step-by-step, DDA, Bresenham (line and circle), Bezier curves (Casteljau), Wu antialiasing. **Step-by-step mode** for learning. |
-| **4** | Clipping Algorithms | Line and polygon clipping with rectangular window: midpoint algorithm and Sutherland-Hodgman algorithm. File data loading, zooming/panning. |
-| **5** | Color Converter | Bidirectional conversion between RGB ↔ HSV ↔ XYZ ↔ LAB color models. Color preview, operation history, slider and input field synchronization. |
-| **6** | 3D Letter "N" Visualization | 3D model of the letter "N" with controls: scale, rotation around three axes (X, Y, Z), translation. Matrix transformations, projections onto XY, XZ, YZ planes. Mouse control and auto-rotation. |
+| **1** | Image Metadata Analyzer `📐` | Image metadata analysis (JPG, PNG, GIF, BMP, TIFF, WEBP). EXIF data extraction, JPEG quantization matrix, histogram visualization. |
+| **2** | Image Editor `📊` | Interactive image processing: brightness/contrast, histogram, thresholding, morphological operations, edge detectors (Sobel, Canny, Harris, FAST). |
+| **3** | Raster Algorithms `📈` | Visualization of rasterization algorithms: step-by-step, DDA, Bresenham (line and circle), Bezier curves (Casteljau), Wu antialiasing. **Step-by-step mode** for learning. |
+| **4** | Clipping Algorithms `✂️` | Line and polygon clipping with rectangular window: midpoint algorithm and Sutherland-Hodgman algorithm. File data loading, zooming/panning. |
+| **5** | Color Converter `🎨` | Bidirectional conversion between RGB ↔ HSV ↔ XYZ ↔ LAB color models. Color preview, operation history, slider and input field synchronization. |
+| **6** | 3D Letter "N" Visualization `🧊` | 3D model of the letter "N" with controls: scale, rotation around three axes (X, Y, Z), translation. Matrix transformations, projections onto XY, XZ, YZ planes. Mouse control and auto-rotation. |
 
 ## 🚀 How to Run
 
@@ -180,14 +203,14 @@ Repository with completed laboratory works for the computer graphics course.
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/computer-graphics-labs.gitФ
+   git clone https://github.com/your-username/computer-graphics-labs.git
    cd computer-graphics-labs
    ```
 
 2. **Open the desired lab:**
    - Simply open `index.html` in any lab folder in your browser
    - Live Server in VS Code is recommended
-Ф
+
 ### Option 2: Live Server (Recommended)
 
 1. **Install** the "Live Server" extension in VS Code
