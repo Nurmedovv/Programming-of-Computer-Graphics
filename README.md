@@ -180,14 +180,14 @@ Repository with completed laboratory works for the computer graphics course.
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/computer-graphics-labs.git
+   git clone https://github.com/your-username/computer-graphics-labs.gitФ
    cd computer-graphics-labs
    ```
 
 2. **Open the desired lab:**
    - Simply open `index.html` in any lab folder in your browser
    - Live Server in VS Code is recommended
-
+Ф
 ### Option 2: Live Server (Recommended)
 
 1. **Install** the "Live Server" extension in VS Code
